@@ -3,7 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>ATRV2 | Electronic Press Kit</title>
+  <meta
+    name="description"
+    content="Official electronic press kit for ATRV2 — Los Angeles live band."
+  >
 
   <style>
     * {
@@ -12,36 +17,223 @@
       padding: 0;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
-      min-height: 100vh;
-      background: #080808;
-      color: #fff;
+      background: #050505;
+      color: #ffffff;
       font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .hero {
+      min-height: 100vh;
+      min-height: 100svh;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+
+      background:
+        radial-gradient(circle at 20% 20%, rgba(160, 25, 25, 0.20), transparent 35%),
+        radial-gradient(circle at 85% 75%, rgba(45, 65, 150, 0.16), transparent 35%),
+        linear-gradient(135deg, #090909 0%, #030303 60%, #0b0b0b 100%);
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      opacity: 0.18;
+
+      background-image:
+        linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
+
+      background-size: 60px 60px;
+      pointer-events: none;
+    }
+
+    .nav {
+      position: relative;
+      z-index: 10;
+
+      width: min(1200px, 92%);
+      margin: 0 auto;
+      padding: 28px 0;
+
       display: flex;
       align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-logo {
+      font-size: 1.3rem;
+      font-weight: 900;
+      letter-spacing: -0.04em;
+    }
+
+    .epk-label {
+      font-size: 0.72rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: #a7a7a7;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 5;
+
+      flex: 1;
+      width: min(1200px, 92%);
+      margin: 0 auto;
+
+      display: flex;
+      flex-direction: column;
       justify-content: center;
-      text-align: center;
+      align-items: flex-start;
+
+      padding: 40px 0 90px;
+    }
+
+    .eyebrow {
+      margin-bottom: 18px;
+
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+
+      color: #a9a9a9;
     }
 
     h1 {
-      font-size: clamp(4rem, 14vw, 10rem);
-      letter-spacing: -0.06em;
+      font-size: clamp(5.5rem, 18vw, 13rem);
+      line-height: 0.78;
+      letter-spacing: -0.085em;
+      font-weight: 900;
     }
 
-    p {
-      margin-top: 1rem;
-      color: #aaa;
-      font-size: 1.1rem;
-      letter-spacing: 0.15em;
+    .tagline {
+      max-width: 720px;
+      margin-top: 35px;
+
+      font-size: clamp(1.3rem, 3vw, 2.3rem);
+      line-height: 1.15;
+      font-weight: 700;
+    }
+
+    .genres {
+      margin-top: 18px;
+
+      font-size: clamp(0.82rem, 1.7vw, 1rem);
+      letter-spacing: 0.14em;
       text-transform: uppercase;
+
+      color: #9d9d9d;
+    }
+
+    .location {
+      margin-top: 10px;
+      color: #696969;
+      font-size: 0.9rem;
+    }
+
+    .hero-bottom {
+      position: relative;
+      z-index: 5;
+
+      width: min(1200px, 92%);
+      margin: 0 auto;
+      padding-bottom: 30px;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      color: #666;
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .scroll-line {
+      width: 65px;
+      height: 1px;
+      background: #555;
+      margin-bottom: 7px;
+    }
+
+    @media (max-width: 600px) {
+      .nav {
+        padding-top: 22px;
+      }
+
+      .hero-content {
+        padding-bottom: 55px;
+      }
+
+      h1 {
+        font-size: clamp(5rem, 27vw, 8rem);
+      }
+
+      .tagline {
+        margin-top: 28px;
+      }
+
+      .genres {
+        max-width: 330px;
+        line-height: 1.8;
+      }
+
+      .hero-bottom {
+        padding-bottom: 22px;
+      }
     }
   </style>
 </head>
 
 <body>
-  <main>
-    <h1>ATRV2</h1>
-    <p>Electronic Press Kit</p>
-  </main>
+
+  <section class="hero">
+
+    <header class="nav">
+      <div class="nav-logo">ATRV2</div>
+      <div class="epk-label">Electronic Press Kit</div>
+    </header>
+
+    <main class="hero-content">
+
+      <div class="eyebrow">Los Angeles, California</div>
+
+      <h1>ATRV2</h1>
+
+      <div class="tagline">
+        Different generations. Different influences.<br>
+        One stage.
+      </div>
+
+      <div class="genres">
+        Rock en Español &nbsp;•&nbsp; Norteño &nbsp;•&nbsp; Cumbia &nbsp;•&nbsp; 80s
+      </div>
+
+      <div class="location">
+        Live music without staying in one lane.
+      </div>
+
+    </main>
+
+    <footer class="hero-bottom">
+      <div>
+        <div class="scroll-line"></div>
+        Scroll to explore
+      </div>
+
+      <div>Official EPK</div>
+    </footer>
+
+  </section>
+
 </body>
 </html>
