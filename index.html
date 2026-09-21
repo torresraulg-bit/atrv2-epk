@@ -11,7 +11,132 @@
   >
 
   <style>
- 
+ .about {
+  background: #0a0a0a;
+  border-top: 1px solid #181818;
+  padding: 110px 0 125px;
+}
+
+.about-inner {
+  width: min(1200px, 92%);
+  margin: 0 auto;
+}
+
+.section-label {
+  margin-bottom: 55px;
+  color: #666;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 90px;
+  align-items: start;
+}
+
+.about h2 {
+  font-size: clamp(3.8rem, 8vw, 7rem);
+  line-height: 0.88;
+  letter-spacing: -0.065em;
+}
+
+.about-copy {
+  max-width: 650px;
+}
+
+.about-copy p {
+  margin-bottom: 24px;
+  color: #aaa;
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.about-copy .about-lead {
+  color: #fff;
+  font-size: clamp(1.35rem, 2.3vw, 1.9rem);
+  line-height: 1.35;
+  font-weight: 700;
+}
+
+.about-copy .name-line {
+  color: #fff;
+}
+
+.full-story {
+  margin-top: 38px;
+  padding-top: 28px;
+  border-top: 1px solid #242424;
+}
+
+.full-story summary {
+  cursor: pointer;
+  display: inline-block;
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.full-story summary::-webkit-details-marker {
+  display: none;
+}
+
+.full-story summary::after {
+  content: "  +";
+  margin-left: 8px;
+  color: #777;
+}
+
+.full-story[open] summary::after {
+  content: "  −";
+}
+
+.full-story-copy {
+  margin-top: 42px;
+}
+
+.full-story-copy p {
+  color: #999;
+}
+
+.full-story-copy .story-ending {
+  color: #fff;
+  font-weight: 700;
+}
+
+@media (max-width: 750px) {
+  .about {
+    padding: 80px 0 90px;
+  }
+
+  .section-label {
+    margin-bottom: 30px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+
+  .about h2 {
+    font-size: clamp(3.7rem, 18vw, 5.5rem);
+  }
+
+  .about-copy p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .full-story {
+    margin-top: 32px;
+  }
+}
 }
 
 @media (max-width: 750px) {
@@ -251,6 +376,218 @@
     </footer>
 
   </section>
+<section class="about" id="about">
+  <div class="about-inner">
 
+    <div class="section-label">01 — The Story</div>
+
+    <div class="about-grid">
+
+      <div class="about-title">
+        <h2>WHO IS<br>ATRV2?</h2>
+      </div>
+
+      <div class="about-copy">
+
+        <p class="about-lead">
+          ATRV2 didn’t begin with a plan to start a band. It began with a
+          father who loved music and three sons he was determined to push toward it.
+        </p>
+
+        <p>
+          What started in the late ’90s as family jams eventually became
+          <strong>Los Atrevidos</strong>, playing quinceañeras, weddings,
+          parties and local events before the members followed different
+          musical paths.
+        </p>
+
+        <p>
+          More than two decades later, another family party brought them back
+          together. What was supposed to be one night of music turned into a
+          band again—this time carrying years of rock en español, alternative,
+          norteño, cumbia, salsa, ’80s music and heavier influences with them.
+        </p>
+
+        <p class="name-line">
+          <strong>Los Atrevidos became ATRV2: Atrevidos, version 2.0.</strong>
+        </p>
+
+        <p>
+          ATRV2 isn’t an attempt to recreate the old band. It’s what happened
+          when people who started playing together as kids came back decades
+          later with completely different musical lives behind them—and
+          decided to see what all of it sounded like on the same stage.
+        </p>
+
+        <details class="full-story">
+          <summary>Read the full story</summary>
+
+          <div class="full-story-copy">
+
+            <p>
+              Their father had played in a band when he was younger, and by the
+              late ’90s he was finding ways to pass that love of music down.
+              Hugo, still young and learning accordion and keyboards, regularly
+              found himself recruited to perform in front of family and friends.
+              Raúl was eventually gifted a bass. César already had years of
+              music around him as a sonidero and was beginning to play
+              instruments himself.
+            </p>
+
+            <p>Then came one Christmas gathering.</p>
+
+            <p>
+              <strong>Lalo</strong>, a close family friend already known for
+              singing pretty much everywhere he went, showed up with his
+              acoustic guitar. Hugo was on accordion and keyboards, César on
+              drums, Raúl on bass, and Lalo did what Lalo always did—he sang.
+            </p>
+
+            <p>
+              Somewhere in the middle of a long night surrounded by family and
+              friends, the adults decided these kids were apparently a band.
+            </p>
+
+            <p><strong>Los Atrevidos was born.</strong></p>
+
+            <p>
+              There wasn’t much equipment. Recycled speakers from the brothers’
+              old DJ setup became the first PA. Lalo bought an electric guitar,
+              an amp and a microphone. César upgraded a few cymbals. Their dad
+              picked up a set of congas within the next few weeks.
+            </p>
+
+            <p>
+              Piece by piece, what had started as a family jam began looking
+              like an actual band.
+            </p>
+
+            <p>
+              For their father, it was a dream becoming real.
+            </p>
+
+            <p>
+              For Hugo and Raúl... maybe not immediately.
+            </p>
+
+            <p>
+              Neither was completely sold on the idea at first, but it didn’t
+              take long before they were in. Los Atrevidos began playing
+              quinceañeras, weddings, parties and local events, building its
+              identity the same way it had built its first PA: one piece at a
+              time.
+            </p>
+
+            <p>
+              Eventually, the brothers’ musical interests began pulling in
+              different directions. Raúl, increasingly drawn toward alternative
+              rock and rock en español, left to pursue a different sound and
+              brought Hugo with him into what would become
+              <strong>Alebrije</strong>.
+            </p>
+
+            <p>
+              And just like that, the first era of Los Atrevidos came to an end.
+            </p>
+
+            <p>But the musicians didn’t.</p>
+
+            <p>
+              Over the years they followed different paths through music and
+              life. Some played in other bands, some toured, some stepped away,
+              and some simply kept playing whenever the opportunity came. The
+              name Los Atrevidos disappeared, but the connection that created
+              it never completely did.
+            </p>
+
+            <p>
+              More than two decades later, another family party brought
+              everyone back together.
+            </p>
+
+            <p>
+              While planning a surprise birthday party for their mom, the
+              brothers began recruiting old friends to play.
+              <strong>Lalo returned on vocals</strong>, longtime friend
+              <strong>Juanito joined on bass</strong>, Raúl moved from his
+              original role on bass to guitar, and the group started rehearsing
+              a set built largely around the ’50s and ’60s rock & roll they
+              loved.
+            </p>
+
+            <p>It was supposed to be a party.</p>
+
+            <p>Instead, they accidentally started a band again.</p>
+
+            <p>
+              Juanito eventually stepped away for personal reasons, but by then
+              something had already clicked. This wasn’t simply a reunion of
+              the old Los Atrevidos. Everyone had accumulated another
+              twenty-plus years of influences and experience.
+            </p>
+
+            <p>So the old name stayed—but with a twist.</p>
+
+            <p>
+              <strong>
+                Los Atrevidos became ATRV2: Atrevidos, version 2.0.
+              </strong>
+            </p>
+
+            <p>And the family began growing again.</p>
+
+            <p>
+              Hugo’s friend <strong>Steve</strong> originally came around
+              simply wanting to jam. He picked up the accordion and has been
+              learning ever since, bringing with him a genuine love for
+              old-school norteño that added another character to the band’s
+              sound.
+            </p>
+
+            <p>
+              <strong>Ramiro</strong> later came aboard on bass, bringing deep
+              musical knowledge, strong technique and an unmistakable ’80s
+              influence. Through Ramiro came his friend <strong>Rena</strong>,
+              whose roots are in metal—think Iron Maiden—but whose versatility
+              lets him jump from a heavy guitar part to norteño or cumbia
+              without blinking.
+            </p>
+
+            <p>That mix is ultimately what ATRV2 became.</p>
+
+            <p>
+              The band was never built around a single genre. César brought the
+              cumbias, salsa and romantic ballads. Raúl brought ’90s
+              alternative and rock en español along with a love for early rock
+              & roll. Hugo became the musical chameleon connecting seemingly
+              unrelated styles. Steve brought old-school norteño, Ramiro
+              brought the ’80s, and Rena brought the heavier edge.
+            </p>
+
+            <p>
+              And Lalo—the friend with the acoustic guitar who was singing at
+              that Christmas party all those years ago—remains part of the
+              story that started it all.
+            </p>
+
+            <p>
+              ATRV2 isn’t an attempt to recreate Los Atrevidos exactly as it
+              was.
+            </p>
+
+            <p class="story-ending">
+              It’s what happened when the people who started playing together
+              as kids came back decades later with completely different musical
+              lives behind them—and decided to see what all of it sounded like
+              in the same band.
+            </p>
+
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </div>
+</section>
 </body>
 </html>
