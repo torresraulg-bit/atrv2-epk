@@ -745,6 +745,51 @@
     padding: 22px 18px;
   }
 }
+    .stage-plot {
+  margin-top: 50px;
+  padding-top: 28px;
+  border-top: 1px solid #242424;
+}
+
+.stage-plot summary {
+  cursor: pointer;
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.stage-plot summary::-webkit-details-marker {
+  display: none;
+}
+
+.stage-plot summary::after {
+  content: " +";
+  color: #777;
+}
+
+.stage-plot[open] summary::after {
+  content: " −";
+}
+
+.stage-plot-wrap {
+  margin-top: 35px;
+}
+
+.stage-plot-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #242424;
+}
+
+.stage-plot-wrap p {
+  margin-top: 12px;
+  color: #666;
+  font-size: 0.78rem;
+}
   </style>
 </head>
 
@@ -1124,7 +1169,21 @@
       </div>
 
     </div>
+<details class="stage-plot">
+  <summary>View Stage Plot</summary>
 
+  <div class="stage-plot-wrap">
+    <a href="stage-plot.png" target="_blank">
+      <img
+        src="stage-plot.png"
+        alt="ATRV2 stage plot and technical rider"
+        class="stage-plot-image"
+      >
+    </a>
+
+    <p>Tap the stage plot to open the full-size version.</p>
+  </div>
+</details>
     <details class="tech-details">
       <summary>Additional Production Notes</summary>
 
