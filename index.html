@@ -1084,6 +1084,94 @@
     text-transform: uppercase;
   }
 }
+    .downloads {
+  background: #090909;
+  border-top: 1px solid #181818;
+  padding: 110px 0 125px;
+}
+
+.downloads-inner {
+  width: min(1200px, 92%);
+  margin: 0 auto;
+}
+
+.downloads-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 90px;
+}
+
+.downloads h2 {
+  font-size: clamp(3.8rem, 8vw, 7rem);
+  line-height: 0.88;
+  letter-spacing: -0.065em;
+}
+
+.downloads-content {
+  max-width: 620px;
+}
+
+.downloads-lead {
+  color: #fff;
+  font-size: clamp(1.3rem, 2.3vw, 1.8rem);
+  font-weight: 700;
+  line-height: 1.35;
+  margin-bottom: 35px;
+}
+
+.download-links {
+  display: grid;
+  gap: 1px;
+  background: #222;
+}
+
+.download-card {
+  display: block;
+  padding: 25px;
+  background: #0a0a0a;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.download-card:hover {
+  background: #111;
+}
+
+.download-card span {
+  display: block;
+  margin-bottom: 10px;
+  color: #666;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.download-card strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+.download-card small {
+  color: #888;
+}
+
+@media (max-width: 750px) {
+  .downloads {
+    padding: 80px 0 90px;
+  }
+
+  .downloads-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .downloads h2 {
+    font-size: clamp(3.7rem, 18vw, 5.5rem);
+  }
+}
   </style>
 </head>
 
@@ -1596,6 +1684,41 @@
         <p>If ATRV2’s Markbass amplifier is used, bass can feed FOH via XLR.</p>
       </div>
     </details>
+
+  </div>
+</section>
+  <a href="#downloads">Downloads</a>
+  <div class="downloads-inner">
+
+    <div class="section-label">05 — Downloads</div>
+
+    <div class="downloads-grid">
+      <div>
+        <h2>PRESS<br>FILES.</h2>
+      </div>
+
+      <div class="downloads-content">
+        <p class="downloads-lead">
+          Download the current ATRV2 press kit and technical rider.
+        </p>
+
+        <div class="download-links">
+
+          <a href="ATRV2_Press_Kit.pdf" download class="download-card">
+            <span>Press Kit</span>
+            <strong>ATRV2 Press Kit PDF</strong>
+            <small>Bio · music · live links · contact</small>
+          </a>
+
+          <a href="ATRV2_Tech_Rider.pdf" download class="download-card">
+            <span>Production</span>
+            <strong>ATRV2 Tech Rider PDF</strong>
+            <small>Stage plot · inputs · monitoring · power</small>
+          </a>
+
+        </div>
+      </div>
+    </div>
 
   </div>
 </section>
