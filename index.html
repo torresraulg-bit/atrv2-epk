@@ -399,6 +399,140 @@
   line-height: 1.4;
 }
       }
+    .music {
+  background: #050505;
+  border-top: 1px solid #181818;
+  padding: 110px 0 125px;
+}
+
+.music-inner {
+  width: min(1200px, 92%);
+  margin: 0 auto;
+}
+
+.music-header {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 90px;
+  align-items: start;
+}
+
+.music h2 {
+  font-size: clamp(3.8rem, 8vw, 7rem);
+  line-height: 0.88;
+  letter-spacing: -0.065em;
+}
+
+.music-intro {
+  max-width: 620px;
+}
+
+.music-intro p {
+  margin-bottom: 24px;
+  color: #aaa;
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.music-intro p:first-child {
+  color: #fff;
+  font-size: clamp(1.3rem, 2.3vw, 1.8rem);
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.genre-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 70px;
+  border-top: 1px solid #242424;
+  border-left: 1px solid #242424;
+}
+
+.genre-grid div {
+  padding: 28px;
+  border-right: 1px solid #242424;
+  border-bottom: 1px solid #242424;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.repertoire {
+  margin-top: 55px;
+}
+
+.repertoire summary {
+  cursor: pointer;
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.repertoire summary::-webkit-details-marker {
+  display: none;
+}
+
+.repertoire summary::after {
+  content: " +";
+  color: #777;
+}
+
+.repertoire[open] summary::after {
+  content: " −";
+}
+
+.song-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  margin-top: 35px;
+  background: #222;
+}
+
+.song-grid span {
+  background: #0a0a0a;
+  padding: 18px 20px;
+  color: #aaa;
+}
+
+.repertoire-note {
+  margin-top: 25px;
+  color: #666;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 750px) {
+  .music {
+    padding: 80px 0 90px;
+  }
+
+  .music-header {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+
+  .music h2 {
+    font-size: clamp(3.7rem, 18vw, 5.5rem);
+  }
+
+  .genre-grid {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 45px;
+  }
+
+  .genre-grid div {
+    padding: 20px 15px;
+    font-size: 0.75rem;
+  }
+
+  .song-grid {
+    grid-template-columns: 1fr;
+  }
+}
   </style>
 </head>
 
@@ -652,18 +786,7 @@
     </div>
   </div>
 </section>
-  <div class="song-grid">
-  <span>De Música Ligera</span>
-  <span>Devuélveme a Mi Chica</span>
-  <span>La Chona</span>
-  <span>El Tucanazo</span>
-  <span>Camelia la Tejana</span>
-  <span>Mátame a Besos</span>
-  <span>Juana la Cubana</span>
-  <span>Tiene Espinas el Rosal</span>
-  <span>Flor de Capomo</span>
-  <span>Careless Whisper</span>
-</div><section class="music" id="music">
+  <section class="music" id="music">
   <div class="music-inner">
 
     <div class="section-label">02 — The Music</div>
