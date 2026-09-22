@@ -790,6 +790,135 @@
   color: #666;
   font-size: 0.78rem;
 }
+    .live {
+  background: #050505;
+  border-top: 1px solid #181818;
+  padding: 110px 0 125px;
+}
+
+.live-inner {
+  width: min(1200px, 92%);
+  margin: 0 auto;
+}
+
+.live-header {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 90px;
+  align-items: start;
+  margin-bottom: 70px;
+}
+
+.live h2 {
+  font-size: clamp(3.8rem, 8vw, 7rem);
+  line-height: 0.88;
+  letter-spacing: -0.065em;
+}
+
+.live-intro {
+  max-width: 620px;
+}
+
+.live-intro p {
+  margin-bottom: 20px;
+  color: #999;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.live-intro p:first-child {
+  color: #fff;
+  font-size: clamp(1.3rem, 2.3vw, 1.8rem);
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.featured-video {
+  margin-bottom: 55px;
+}
+
+.video-frame {
+  position: relative;
+  overflow: hidden;
+  background: #000;
+  border: 1px solid #222;
+}
+
+.video-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-frame.widescreen {
+  aspect-ratio: 16 / 9;
+}
+
+.video-frame.portrait {
+  aspect-ratio: 9 / 16;
+  max-height: 680px;
+}
+
+.video-info {
+  padding-top: 16px;
+}
+
+.video-info span {
+  display: block;
+  margin-bottom: 6px;
+  color: #666;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.video-info h3 {
+  color: #fff;
+  font-size: 1.25rem;
+}
+
+.live-grid {
+  display: grid;
+  grid-template-columns: 0.75fr 0.75fr 1.5fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.creep-card {
+  align-self: start;
+}
+
+@media (max-width: 750px) {
+  .live {
+    padding: 80px 0 90px;
+  }
+
+  .live-header {
+    grid-template-columns: 1fr;
+    gap: 38px;
+    margin-bottom: 45px;
+  }
+
+  .live h2 {
+    font-size: clamp(3.7rem, 18vw, 5.5rem);
+  }
+
+  .live-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+
+  .creep-card {
+    grid-column: 1 / -1;
+  }
+
+  .video-info h3 {
+    font-size: 1rem;
+  }
+}
   </style>
 </head>
 
@@ -805,7 +934,7 @@
     <a href="#about">Story</a>
     <a href="#music">Music</a>
     <a href="#live">Live</a>
-    <a href="#tech">Tech Rider</a>
+   <a href="#tech">Tech Rider</a>
     <a href="#downloads">Downloads</a>
     <a href="#contact">Contact</a>
   </nav>
@@ -1110,10 +1239,104 @@
 
   </div>
 </section>
+  <section class="live" id="live">
+  <div class="live-inner">
+
+    <div class="section-label">03 — Live</div>
+
+    <div class="live-header">
+      <h2>SEE IT<br>LIVE.</h2>
+
+      <div class="live-intro">
+        <p>
+          Different rooms. Different styles. Same band.
+        </p>
+        <p>
+          A few performances that show the different sides of ATRV2.
+        </p>
+      </div>
+    </div>
+
+    <!-- FEATURED VIDEO -->
+    <div class="featured-video">
+      <div class="video-frame widescreen">
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/xEIlsvWAS6I"
+          title="ATRV2 - Viva el Amor"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <div class="video-info">
+        <span>Featured Performance</span>
+        <h3>Viva el Amor</h3>
+      </div>
+    </div>
+
+    <!-- OTHER LIVE VIDEOS -->
+    <div class="live-grid">
+
+      <article class="video-card">
+        <div class="video-frame portrait">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/DLS3xVE3uM0"
+            title="ATRV2 - Los Luchadores"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <div class="video-info">
+          <span>Live</span>
+          <h3>Los Luchadores</h3>
+        </div>
+      </article>
+
+      <article class="video-card">
+        <div class="video-frame portrait">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/7-Jr8ecB72g"
+            title="ATRV2 - Gloria"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <div class="video-info">
+          <span>Live</span>
+          <h3>Gloria</h3>
+        </div>
+      </article>
+
+      <article class="video-card creep-card">
+        <div class="video-frame widescreen">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/z8u5no8KnuQ"
+            title="ATRV2 - Creep"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <div class="video-info">
+          <span>Live Performance</span>
+          <h3>Creep</h3>
+        </div>
+      </article>
+
+    </div>
+
+  </div>
+</section>
   <section class="tech" id="tech">
   <div class="tech-inner">
 
-    <div class="section-label">03 — Production</div>
+    <div class="section-label">04 — Production</div>
 
     <div class="tech-header">
       <h2>TECH<br>RIDER.</h2>
