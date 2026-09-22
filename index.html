@@ -1284,6 +1284,152 @@
     margin: 32px auto 50px;
   }
 }
+    .band {
+  background: #090909;
+  border-top: 1px solid #181818;
+  padding: 110px 0 125px;
+}
+
+.band-inner {
+  width: min(1200px, 92%);
+  margin: 0 auto;
+}
+
+.band-header {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 90px;
+  align-items: start;
+  margin-bottom: 65px;
+}
+
+.band h2 {
+  font-size: clamp(3.8rem, 8vw, 7rem);
+  line-height: 0.88;
+  letter-spacing: -0.065em;
+}
+
+.band-intro {
+  max-width: 620px;
+}
+
+.band-intro p {
+  color: #fff;
+  font-size: clamp(1.3rem, 2.3vw, 1.8rem);
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.member-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.member-card {
+  background: #0d0d0d;
+  border: 1px solid #222;
+  overflow: hidden;
+}
+
+.member-photo {
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: #050505;
+}
+
+.member-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.member-info {
+  padding: 24px;
+}
+
+.member-role {
+  display: block;
+  margin-bottom: 8px;
+  color: #777;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.member-info h3 {
+  margin-bottom: 18px;
+  font-size: 2rem;
+  letter-spacing: -0.04em;
+}
+
+.member-info p {
+  margin-bottom: 18px;
+  color: #aaa;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.member-bio {
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid #242424;
+}
+
+.member-bio summary {
+  cursor: pointer;
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.member-bio summary::-webkit-details-marker {
+  display: none;
+}
+
+.member-bio summary::after {
+  content: " +";
+  color: #777;
+}
+
+.member-bio[open] summary::after {
+  content: " −";
+}
+
+.member-bio-copy {
+  margin-top: 24px;
+}
+
+@media (max-width: 750px) {
+  .band {
+    padding: 60px 0 70px;
+  }
+
+  .band-header {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    margin-bottom: 40px;
+  }
+
+  .band h2 {
+    font-size: clamp(3.1rem, 15vw, 4.7rem);
+  }
+
+  .member-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .member-info {
+    padding: 20px;
+  }
+}
   </style>
   
 </head>
@@ -1605,6 +1751,132 @@
         </details>
 
       </div>
+    </div>
+  </div>
+</section>
+  <section class="band" id="band">
+  <div class="band-inner">
+
+    <div class="section-label">02 — Meet the Band</div>
+
+    <div class="band-header">
+      <h2>MEET THE<br>BAND.</h2>
+
+      <div class="band-intro">
+        <p>
+          Different backgrounds. Different influences.
+          One band.
+        </p>
+      </div>
+    </div>
+
+    <div class="member-grid">
+
+      <article class="member-card">
+
+        <div class="member-photo">
+          <img src="raul.png" alt="Raúl — Lead Vocals and Guitar">
+        </div>
+
+        <div class="member-info">
+          <span class="member-role">Lead Vocals / Guitar</span>
+          <h3>RAÚL</h3>
+
+          <p>
+            Raúl started on bass in the original Los Atrevidos before
+            teaching himself guitar at 17 and stepping into vocals at 18
+            simply because somebody needed to sing the rock en español songs.
+            That detour eventually became his musical lane.
+          </p>
+
+          <details class="member-bio">
+            <summary>Read full bio</summary>
+
+            <div class="member-bio-copy">
+
+              <p>
+                Raúl didn’t exactly have a master plan to become a singer or
+                guitarist. Music just kept putting instruments in front of him
+                until one of them stuck.
+              </p>
+
+              <p>
+                Around 15, he was already DJing alongside his older brother
+                César. At home, his younger brother Hugo was learning accordion,
+                so naturally Raúl started messing with that too.
+              </p>
+
+              <p>
+                Then local band <strong>Agosto 3</strong> began storing their
+                equipment in the family garage — which was basically an
+                invitation Raúl was never actually given. He started picking up
+                the bass, taught himself a few songs, and eventually got good
+                enough that the band let him sit in.
+              </p>
+
+              <p>
+                Family gatherings became an early stage, and Raúl eventually
+                found himself playing bass in the original
+                <strong>Los Atrevidos</strong>.
+              </p>
+
+              <p>
+                Around 17, his dad’s longtime friend Juanito took over bass.
+                Raúl wanted to bring more rock en español into the band, so he
+                started teaching himself guitar.
+              </p>
+
+              <p>
+                By 18, another problem showed up: somebody had to sing those
+                songs. Apparently, Raúl.
+              </p>
+
+              <p>
+                That shift pulled him deeper into ’90s alternative rock and
+                rock en español. He eventually co-founded
+                <strong>Alebrije</strong> with Armando Serran, performing at
+                venues including the <strong>House of Blues</strong>.
+              </p>
+
+              <p>
+                He later moved behind the board as a live sound engineer in the
+                Los Angeles rock en español scene, providing sound for
+                performances by artists including Zoé, Belanova, Curanderos
+                and Pastilla.
+              </p>
+
+              <p>
+                Eventually he returned to performing with
+                <strong>Bexo</strong>, alongside Fausto Juárez and César
+                Brizuela, reaching stages including <strong>B.B. King’s</strong>
+                before choosing to step away and focus on family.
+              </p>
+
+              <p>
+                Music never really left. Years later, the reunion that brought
+                the old crew back together eventually became
+                <strong>ATRV2</strong>.
+              </p>
+
+              <p>
+                Today Raúl handles lead vocals and guitar, carrying a mix of
+                ’90s alternative, rock en español and the stripped-down energy
+                of ’50s and ’60s rock &amp; roll.
+              </p>
+
+              <p>
+                <strong>
+                  A little alternative. A little old-school. And not much
+                  interest in staying in one lane.
+                </strong>
+              </p>
+
+            </div>
+          </details>
+
+        </div>
+      </article>
+
     </div>
   </div>
 </section>
