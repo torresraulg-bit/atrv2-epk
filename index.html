@@ -919,6 +919,120 @@
     font-size: 1rem;
   }
 }
+    .contact {
+  background: #050505;
+  border-top: 1px solid #181818;
+  padding: 110px 0 125px;
+}
+
+.contact-inner {
+  width: min(1200px, 92%);
+  margin: 0 auto;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 90px;
+}
+
+.contact h2 {
+  font-size: clamp(3.8rem, 8vw, 7rem);
+  line-height: 0.88;
+  letter-spacing: -0.065em;
+}
+
+.contact-info {
+  max-width: 620px;
+}
+
+.contact-lead {
+  color: #fff;
+  font-size: clamp(1.3rem, 2.3vw, 1.8rem);
+  font-weight: 700;
+  line-height: 1.35;
+  margin-bottom: 35px;
+}
+
+.booking-button {
+  display: inline-block;
+  padding: 16px 26px;
+  margin-bottom: 45px;
+  border: 1px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  transition: 0.2s ease;
+}
+
+.booking-button:hover {
+  background: #fff;
+  color: #000;
+}
+
+.contact-details {
+  border-top: 1px solid #242424;
+}
+
+.contact-details div {
+  padding: 22px 0;
+  border-bottom: 1px solid #242424;
+}
+
+.contact-details span {
+  display: block;
+  margin-bottom: 7px;
+  color: #666;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.contact-details a,
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-links {
+  display: flex;
+  gap: 25px;
+  margin-top: 35px;
+}
+
+.social-links a {
+  color: #999;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.social-links a:hover {
+  color: #fff;
+}
+
+@media (max-width: 750px) {
+  .contact {
+    padding: 80px 0 90px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .contact h2 {
+    font-size: clamp(3.7rem, 18vw, 5.5rem);
+  }
+
+  .social-links {
+    flex-wrap: wrap;
+  }
+}
   </style>
 </head>
 
@@ -936,7 +1050,7 @@
     <a href="#live">Live</a>
    <a href="#tech">Tech Rider</a>
     <a href="#downloads">Downloads</a>
-    <a href="#contact">Contact</a>
+   <a href="#contact">Contact</a>
   </nav>
 
   <button class="menu-button" aria-label="Open navigation">
@@ -1419,6 +1533,54 @@
         <p>If ATRV2’s Markbass amplifier is used, bass can feed FOH via XLR.</p>
       </div>
     </details>
+
+  </div>
+</section>
+  <section class="contact" id="contact">
+  <div class="contact-inner">
+
+    <div class="section-label">05 — Contact</div>
+
+    <div class="contact-grid">
+
+      <div>
+        <h2>LET'S<br>PLAY.</h2>
+      </div>
+
+      <div class="contact-info">
+        <p class="contact-lead">
+          Booking ATRV2 for a city event, festival, private event or live performance?
+          Get in touch.
+        </p>
+
+        <a class="booking-button" href="mailto:torresraulg@gmail.com">
+          BOOK ATRV2
+        </a>
+
+        <div class="contact-details">
+          <div>
+            <span>Email</span>
+            <a href="mailto:torresraulg@gmail.com">
+              torresraulg@gmail.com
+            </a>
+          </div>
+
+          <div>
+            <span>Phone — Steve</span>
+            <a href="tel:+13233569720">
+              (323) 356-9720
+            </a>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="https://instagram.com/losatrv2" target="_blank">Instagram</a>
+          <a href="https://tiktok.com/@losatrv2" target="_blank">TikTok</a>
+          <a href="https://youtube.com/@atrv2" target="_blank">YouTube</a>
+        </div>
+      </div>
+
+    </div>
 
   </div>
 </section>
