@@ -533,17 +533,97 @@
     grid-template-columns: 1fr;
   }
 }
+    .nav {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+
+  width: 100%;
+  padding: 22px 4%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.78),
+    rgba(0,0,0,0)
+  );
+}
+
+.nav-logo {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+}
+
+.desktop-nav {
+  display: flex;
+  gap: 28px;
+}
+
+.desktop-nav a {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: color 0.2s ease;
+}
+
+.desktop-nav a:hover {
+  color: #fff;
+}
+
+.menu-button {
+  display: none;
+  border: 0;
+  background: none;
+  color: #fff;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+@media (max-width: 750px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+  }
+}
   </style>
 </head>
 
 <body>
 
-  <section class="hero">
+  <section class="hero" id="home">
 
     <header class="nav">
-      <div class="nav-logo">ATRV2</div>
-      <div class="epk-label">Electronic Press Kit</div>
-    </header>
+
+  <a href="#home" class="nav-logo">ATRV2</a>
+
+  <nav class="desktop-nav">
+    <a href="#about">Story</a>
+    <a href="#music">Music</a>
+    <a href="#live">Live</a>
+    <a href="#tech">Tech Rider</a>
+    <a href="#downloads">Downloads</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <button class="menu-button" aria-label="Open navigation">
+    ☰
+  </button>
+
+</header>
 
     <main class="hero-content">
 
