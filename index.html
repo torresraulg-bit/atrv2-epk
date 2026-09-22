@@ -599,6 +599,152 @@
     display: block;
   }
 }
+    .tech {
+  background: #090909;
+  border-top: 1px solid #181818;
+  padding: 110px 0 125px;
+}
+
+.tech-inner {
+  width: min(1200px, 92%);
+  margin: 0 auto;
+}
+
+.tech-header {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 90px;
+  align-items: start;
+}
+
+.tech h2 {
+  font-size: clamp(3.8rem, 8vw, 7rem);
+  line-height: 0.88;
+  letter-spacing: -0.065em;
+}
+
+.tech-intro {
+  max-width: 620px;
+}
+
+.tech-intro p {
+  margin-bottom: 24px;
+  color: #aaa;
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.tech-intro p:first-child {
+  color: #fff;
+  font-size: clamp(1.3rem, 2.3vw, 1.8rem);
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 70px;
+  border-top: 1px solid #242424;
+  border-left: 1px solid #242424;
+}
+
+.tech-card {
+  min-height: 170px;
+  padding: 28px;
+  border-right: 1px solid #242424;
+  border-bottom: 1px solid #242424;
+}
+
+.tech-card span {
+  display: block;
+  margin-bottom: 14px;
+  color: #666;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.tech-card strong {
+  display: block;
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.tech-card p {
+  color: #888;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.tech-details {
+  margin-top: 50px;
+  padding-top: 28px;
+  border-top: 1px solid #242424;
+}
+
+.tech-details summary {
+  cursor: pointer;
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.tech-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.tech-details summary::after {
+  content: " +";
+  color: #777;
+}
+
+.tech-details[open] summary::after {
+  content: " −";
+}
+
+.tech-notes {
+  max-width: 760px;
+  margin-top: 35px;
+}
+
+.tech-notes p {
+  padding: 15px 0;
+  margin: 0;
+  color: #999;
+  line-height: 1.6;
+  border-bottom: 1px solid #1d1d1d;
+}
+
+@media (max-width: 750px) {
+  .tech {
+    padding: 80px 0 90px;
+  }
+
+  .tech-header {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+
+  .tech h2 {
+    font-size: clamp(3.7rem, 18vw, 5.5rem);
+  }
+
+  .tech-grid {
+    grid-template-columns: 1fr;
+    margin-top: 45px;
+  }
+
+  .tech-card {
+    min-height: 0;
+    padding: 22px 18px;
+  }
+}
   </style>
 </head>
 
