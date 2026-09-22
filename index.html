@@ -1204,10 +1204,10 @@
     font-size: clamp(3.7rem, 18vw, 5.5rem);
   }
 }
-    .nav-socials {
+.nav-socials {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
   margin-left: auto;
   margin-right: 20px;
 }
@@ -1215,26 +1215,36 @@
 .nav-socials a {
   color: #aaa;
   text-decoration: none;
-  font-size: 0.68rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .nav-socials a:hover {
   color: #fff;
+  transform: translateY(-1px);
 }
 
 @media (max-width: 750px) {
   .nav-socials {
-    gap: 10px;
+    gap: 12px;
     margin-right: 14px;
   }
+
+  .nav-socials a {
+    font-size: 1rem;
+  }
+}
 
   .nav-socials a {
     font-size: 0.62rem;
   }
 }
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   </style>
+  
 </head>
 
 <body>
@@ -1254,9 +1264,17 @@
     <a href="#contact">Contact</a>
   </nav>
 <div class="nav-socials">
-  <a href="https://instagram.com/losatrv2" target="_blank" aria-label="Instagram">IG</a>
-  <a href="https://tiktok.com/@losatrv2" target="_blank" aria-label="TikTok">TT</a>
-  <a href="https://youtube.com/@atrv2" target="_blank" aria-label="YouTube">YT</a>
+  <a href="https://instagram.com/losatrv2" target="_blank" aria-label="Instagram">
+    <i class="fa-brands fa-instagram"></i>
+  </a>
+
+  <a href="https://tiktok.com/@losatrv2" target="_blank" aria-label="TikTok">
+    <i class="fa-brands fa-tiktok"></i>
+  </a>
+
+  <a href="https://youtube.com/@atrv2" target="_blank" aria-label="YouTube">
+    <i class="fa-brands fa-youtube"></i>
+  </a>
 </div>
   <button
     class="menu-button"
