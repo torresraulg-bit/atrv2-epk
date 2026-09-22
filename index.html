@@ -1204,6 +1204,36 @@
     font-size: clamp(3.7rem, 18vw, 5.5rem);
   }
 }
+    .nav-socials {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.nav-socials a {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.nav-socials a:hover {
+  color: #fff;
+}
+
+@media (max-width: 750px) {
+  .nav-socials {
+    gap: 10px;
+    margin-right: 14px;
+  }
+
+  .nav-socials a {
+    font-size: 0.62rem;
+  }
+}
   </style>
 </head>
 
@@ -1223,7 +1253,11 @@
     <a href="#downloads">Downloads</a>
     <a href="#contact">Contact</a>
   </nav>
-
+<div class="nav-socials">
+  <a href="https://instagram.com/losatrv2" target="_blank" aria-label="Instagram">IG</a>
+  <a href="https://tiktok.com/@losatrv2" target="_blank" aria-label="TikTok">TT</a>
+  <a href="https://youtube.com/@atrv2" target="_blank" aria-label="YouTube">YT</a>
+</div>
   <button
     class="menu-button"
     id="menuButton"
