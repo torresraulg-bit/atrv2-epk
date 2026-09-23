@@ -1696,6 +1696,13 @@
     transition: none;
   }
 }
+    .member-card:nth-child(2) {
+  transition-delay: 0.08s;
+}
+
+.member-card:nth-child(3) {
+  transition-delay: 0.16s;
+}
   </style>
   
 </head>
@@ -2951,6 +2958,29 @@
       menuButton.textContent = "☰";
     });
   });
+</script>
+  <script>
+  const revealItems = document.querySelectorAll(
+    ".about-grid, .band-header, .member-card, .music-header, .genre-grid, .live-header, .video-card, .tech-header, .tech-grid, .downloads-grid, .contact-grid"
+  );
+
+  revealItems.forEach(item => item.classList.add("reveal"));
+
+  const revealObserver = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.12
+    }
+  );
+
+  revealItems.forEach(item => revealObserver.observe(item));
 </script>
 </body>
 </html>
